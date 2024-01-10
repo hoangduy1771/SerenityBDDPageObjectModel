@@ -89,7 +89,9 @@ public class BasePage extends PageObject {
 
 //    Common Business Specific Functionalities
 
+    public nothing() {
 
+    }
 
 }
 
