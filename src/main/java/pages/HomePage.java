@@ -1,6 +1,7 @@
 package pages;
 
 import base.BasePage;
+import net.serenitybdd.core.pages.PageObject;
 
 public class HomePage extends BasePage {
     String newCarMenu = "xpath=//div[contains(text(), 'NEW CARS')]";
@@ -19,7 +20,6 @@ public class HomePage extends BasePage {
     public void findNewCars() {
         moveMouseTo(newCarMenu);
         click(findNewCar);
-
     }
 
     public void findUsedCars() {

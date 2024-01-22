@@ -20,9 +20,9 @@ public class FindCarTest {
 
     @Title("Finding Car Test")
     @Test
-    public void findCarTest() {
+    public void findCarTest() throws InterruptedException {
         car.navigate();
-        car.findNewCars();
+        car.findNewCars("Toyota");
 
     }
 

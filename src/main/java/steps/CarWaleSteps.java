@@ -2,10 +2,12 @@ package steps;
 
 import net.serenitybdd.annotations.Step;
 import pages.HomePage;
+import pages.NewCarsPage;
 
 public class CarWaleSteps {
 
     HomePage home;
+    NewCarsPage newCarsPage;
 
     @Step
     public void navigate() {
@@ -14,8 +16,9 @@ public class CarWaleSteps {
     }
 
     @Step
-    public void findNewCars() {
+    public void findNewCars(String carMake) throws InterruptedException {
         home.findNewCars();
+        newCarsPage.chooseCarBrand(carMake);
     }
 
 
